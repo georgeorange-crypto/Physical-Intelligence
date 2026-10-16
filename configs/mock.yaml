@@ -1,0 +1,22 @@
+# Documentation template for a local synthetic run.
+# The current CLI does not automatically load this file; pass options on the command line.
+mode: mock
+backend:
+  type: mock
+robot:
+  joint_count: 6
+  camera:
+    width: 640
+    height: 480
+    fps: 10
+control:
+  hz: 5
+  execution_horizon: 1
+  max_steps: 120
+safety:
+  max_delta_deg: 5.0
+  observation_timeout_ms: 500
+task:
+  default: red_to_blue
+logging:
+  directory: logs/

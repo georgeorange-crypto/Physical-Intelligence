@@ -1,0 +1,4 @@
+# Synthetic task specification sample; real-scene success is not established.
+red_to_blue:
+  instruction: Place the red block in the blue area.
+  aliases: [把红色方块放进蓝色区域, 把红块放到蓝区]

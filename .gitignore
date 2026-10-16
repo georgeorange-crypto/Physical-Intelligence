@@ -1,3 +1,37 @@
-.zig-cache/
-zig-out/
-*.o
+# Python environments and packaging
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Test, lint, and type-check caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Runtime output, datasets, and model weights can contain large or private data
+logs/
+datasets/
+checkpoints/
+*.safetensors
+*.pt
+*.pth
+
+# Local secrets and machine-specific settings
+.env
+.env.*
+!.env.example
+*.local.yaml
+*.local.yml
+
+# Editor / operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

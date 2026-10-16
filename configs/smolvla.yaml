@@ -1,0 +1,14 @@
+# Reference settings for SmolVLA smoke / evaluation; not consumed automatically by the CLI.
+policy: smolvla
+checkpoint: lerobot/smolvla_base
+device: cuda
+dataset:
+  expected_features:
+    observation.state: [6]
+    observation.images.image: [480, 640, 3]
+    action: [6]
+  training_source: real_only
+  mock_data_allowed_for_final_training: false
+inference:
+  chunk_size: 16
+  execution_horizon: 1

@@ -1,0 +1,14 @@
+# Reference settings for ACT smoke / evaluation; not consumed automatically by the CLI.
+policy: act
+checkpoint: null
+device: cuda
+dataset:
+  expected_features:
+    observation.state: [6]
+    action: [6]
+  training_source: real_only
+  # Keep false: mock trajectories are integration fixtures, not policy training data.
+  mock_data_allowed_for_final_training: false
+inference:
+  chunk_size: 16
+  execution_horizon: 1

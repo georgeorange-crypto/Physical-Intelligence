@@ -1,0 +1,18 @@
+# FUTURE DEPLOYMENT TEMPLATE ONLY. No real device has been validated.
+# Do not set physical_calibration_verified to true without measured and reviewed data.
+# The CLI does not automatically load this YAML; configure the deployment service separately.
+mode: real
+backend:
+  type: rpc
+  # Replace locally with the reachable RPC service; do not commit private hostnames.
+  base_url: http://127.0.0.1:8765
+robot:
+  joint_count: 6
+  # Keep null until a real calibration file has been measured and reviewed.
+  calibration_file: null
+  physical_calibration_verified: false
+control:
+  hz: 5
+  execution_horizon: 1
+safety:
+  physical_calibration_required: true

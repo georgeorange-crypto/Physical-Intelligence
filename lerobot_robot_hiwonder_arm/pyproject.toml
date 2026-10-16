@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lerobot_robot_hiwonder_arm"
+version = "0.1.0"
+description = "LeRobot plugin for a six-joint Hiwonder arm through the robot-vla backend contract"
+requires-python = ">=3.10"
+dependencies = [
+  "lerobot==0.6.1",
+  "httpx>=0.27",
+  "numpy>=2.0,<2.3",
+  "opencv-python-headless>=4.9,<4.14",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["lerobot_robot_hiwonder_arm"]

@@ -1,0 +1,10 @@
+# Software envelope for the mock driver only. These are not physical joint limits.
+source: driver_envelope_only
+physical_calibration_verified: false
+joints:
+  - {name: base, min_deg: 0, max_deg: 180}
+  - {name: upper_arm, min_deg: 0, max_deg: 180}
+  - {name: forearm, min_deg: 0, max_deg: 180}
+  - {name: wrist_pitch, min_deg: 0, max_deg: 180}
+  - {name: wrist_rotation, min_deg: 0, max_deg: 270}
+  - {name: gripper, min_deg: 0, max_deg: 180}
